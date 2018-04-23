@@ -1,0 +1,39 @@
+///social incons
+.social-media{
+    background: $pink-light;
+
+    h3{
+      margin: 0px;
+      padding-top: 15px;
+    }
+  ul{
+
+    list-style: none;
+    padding: 0px;
+  }
+}
+
+
+
+//instagram photos
+#insta-outer{
+  margin-top: 44px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid pink;
+  background-color: $pink-light;
+  width: 200px;
+  h3{
+    border-top: none;
+  }
+
+.insta-pic{
+  background-color: tomato;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  display: inline-block;
+}
+
+
+}

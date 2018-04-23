@@ -1,0 +1,97 @@
+/* Tiny Carousel */
+
+
+#citys {
+  max-width: 900px;
+  margin: auto;
+  border-top: 1px solid pink;
+    margin-top: 44px;
+  background-color: $pink-light;
+  // overflow: hidden;
+  position: relative;
+  padding: 0 55px 10px;
+
+  a img{
+    vertical-align: middle;
+
+    }
+    //Restaurants h1
+    h1{
+
+            padding-top: 30px;
+            max-width: 100%;
+            margin: auto;
+            border-top: none;
+    }
+
+}
+
+#citys .viewport {
+    height: 211px;
+    overflow: hidden;
+    position: relative;
+}
+
+#citys .buttons {
+    background: #C01313;
+    border-radius: 35px;
+    margin-top: 58px;
+    display: iblock;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+#citys .next {
+    right: 0;
+    left: auto;
+    top: 38%;
+}
+#citys .prev {
+
+    top: 38%;
+}
+#citys .buttons:hover {
+    color: #C01313;
+    background: #fff;
+}
+
+#citys .disable {
+    visibility: hidden;
+}
+
+#citys .overview {
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 240px;
+    left: 0;
+    top: 0;
+
+
+}
+
+#citys .overview li {
+    float: left;
+    margin: 0 20px 0 0;
+    padding: 1px;
+    height: 200px;
+    border: 1px solid #dcdcdc;
+    width: 280px;
+
+
+ }
+
+ //arrows
+ #left-arr , #right-arr{
+   vertical-align: middle !important;
+ }

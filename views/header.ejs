@@ -1,0 +1,111 @@
+
+<div class="header">
+
+  <img class="back" src="\images\sea11.png">
+  <img class="ber" src="\images\logo.png">
+  <ul>
+    <div class="dropdown">
+    <li class="dropbtn">-Blog Posts-</li>
+
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+    <li class="dropbtn">-Destinations-</li>
+
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+    <li class="dropbtn">-Food-</li>
+
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+    <li class="dropbtn">-Contact-</li>
+
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+  </ul>
+
+  <!-- languages -->
+  <div id="lang">
+      <a href="#"><img id="es" src="\images\icons\es.png"></a>
+      <a href="#"><img id="usa" src="\images\icons\usa.png"></a>
+
+  </div>
+</div>
+
+<style>
+.dropbtn {
+
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    height: 0px;
+
+    border-radius: 4%;
+    left: 65px;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    -webkit-transition: height 2s; /* For Safari 3.1 to 6.0 */
+    -webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+    -o-transition: height 1s ease;
+    transition: height 1s ease;
+}
+.dropdown-content:hover{
+    height: 300px;
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 11px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+  opacity: 0.5;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+      background-color: rgba(241, 241, 241, 0.5)
+}
+
+.dropdown:hover .dropbtn {
+    opacity: 0.5;
+    background-color: rgba(241, 241, 241, 0.5)
+}
+</style>

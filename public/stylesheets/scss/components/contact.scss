@@ -1,0 +1,63 @@
+.contact{
+  background: url('../../images/contact-pic.jpeg');
+  background-size: cover;
+  margin-top: 39px;
+}
+
+form{
+  padding-left: 50px;
+  h1{ //my contact info header
+    background: transparent;
+    text-align: center;
+    border-top: none;
+  }
+
+  input, textarea{
+
+    background-color: white;
+    border: none;
+    box-shadow: 2px 2px 3px black;
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    opacity: 0.5;
+
+  }
+    input[type=text]:focus {
+      border-color:#333;
+      opacity: 0.8 !important;
+
+    }
+
+    input[type=submit] {
+      padding:5px 15px;
+      background:#ccc;
+      border:0 none;
+      cursor:pointer;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      font-family: 'Great Vibes', cursive;
+    }
+  textarea{
+    height: 246px;
+    width: 532px;
+  }
+
+
+  } //form
+
+
+@media only screen and (max-width: 600px) {
+  .contact{
+    background: url('../../images/contact-pic.jpeg');
+    background-position: cover center;
+    margin-top: 39px;
+  }
+  form{
+    margin-bottom: 10px;
+    textarea{
+    width: 310px;
+  }
+}
+}
