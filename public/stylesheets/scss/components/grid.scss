@@ -1,5 +1,5 @@
 //desktop
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12,1fr);
@@ -9,7 +9,7 @@
   position: relative;
 }
 .grid-container > div {
-  // background-color: lightblue;
+
 
 }
 
@@ -19,16 +19,17 @@
 
 .recentBlog{
   grid-column: 2 / 9;
-  background-color: $pink-light;
+  // background-color: $greyback;
+
 }
 .aside{
   grid-column: 10/ 12;
   grid-row: 2/ 3;
-
+  // background-color: $greyback;
 }
 .citys{
   grid-column: 2 / 12;
-  border-top: 1px solid pink;
+  border: $greyback;
 }
 .rests{
   grid-column: 2 /12;
@@ -46,15 +47,15 @@
 
 }//end desktop
 
-//mobile adjustments
-@media only screen and (max-width: 600px) {
+//mobile default
 
+@media only screen and (max-width: 768px) {
   .grid-container {
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(6,minmax(auto,auto));
     text-align: center;
-    margin: 0px 5px;
+    margin: 0px 25px;
     position: relative;
   }
   .grid-container > div {
@@ -68,16 +69,18 @@
 
   .recentBlog{
     grid-column: 1 / 13;
-    background-color: $pink-light;
+
   }
   .aside{
     grid-column: 1/ 13;
   margin: 5px 0px !important;
 
+    border-top: $greyborder;
+    border-bottom: $greyborder;
   }
   .citys{
     grid-column: 1 / 13;
-    border-top: 1px solid pink;
+
   }
   .rests{
     grid-column: 1 / 13;
@@ -92,16 +95,10 @@
     background-color: darkgrey;
   }
 
-}
-
-// //tablet
-// @media only screen and (max-width: 700px) {
-//
-//
-// }
 
 
 
+}//query
 
 #outline{
   display: none;

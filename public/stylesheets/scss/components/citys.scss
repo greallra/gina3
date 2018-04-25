@@ -4,9 +4,9 @@
 #citys {
   max-width: 900px;
   margin: auto;
-  border-top: 1px solid pink;
+
     margin-top: 44px;
-  background-color: $pink-light;
+
   // overflow: hidden;
   position: relative;
   padding: 0 55px 10px;
@@ -95,3 +95,12 @@
  #left-arr , #right-arr{
    vertical-align: middle !important;
  }
+
+
+@media only screen and (max-width: 768px) {
+  #citys {
+    margin-top: 0px;
+    max-width: 284px;
+  }
+
+}

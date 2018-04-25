@@ -48,16 +48,38 @@ form{
   } //form
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .contact{
-    background: url('../../images/contact-pic.jpeg');
-    background-position: cover center;
+    background: url('../../images/contact-pic-m2.jpg');
+     background-size: cover;
     margin-top: 39px;
+    height: 380px;
   }
   form{
-    margin-bottom: 10px;
+    padding-left: 25px;
+    h1{ //my contact info header
+
+      padding-top: 5px;
+      padding-bottom: 0px;
+    }
+    h4{
+      margin-bottom: 3px;
+        margin-top: 8px;
+    }
+
+
+
+
+      input[type=submit] {
+        padding:12px 15px;
+        opacity: 0.9;
+
+      }
     textarea{
-    width: 310px;
-  }
+      height: 106px;
+      width: 432px;
+
+    }
+
 }
-}
+}//query

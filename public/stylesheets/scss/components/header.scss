@@ -1,16 +1,19 @@
 
 .header{
+  i{
+        display: none;
+  }
   background-color: #fff;
   position: relative;
   min-height: 423px;
-
+  box-shadow: -1px -4px 6px lightblue;
 
   .back{
     width: 100%;
     border-bottom-left-radius: 8%;
     border-bottom-right-radius: 8%;
-   border:1px solid #fff;
-   box-shadow: 3px 3px 3px #fff;
+   // border:1px solid #fff;
+   // box-shadow: 3px 3px 3px #fff;
 
    height:300px;
 
@@ -19,8 +22,8 @@
     position: absolute;
     height: 300px;
     width: 382px;
-    top: 125px;
-    right: 32%;
+    top: 15px;
+    right: 25%;
     -webkit-animation: bounce 1.2s ease-out;
 -moz-animation: bounce 800ms ease-out;
 -o-animation: bounce 800ms ease-out;
@@ -33,49 +36,131 @@ animation: bounce 1.2s ease-out;
     text-decoration: none;
     font-size: 31px;
     margin: 0px;
-    box-shadow: -1px 34px 6px lightblue;
+
     padding: 0px;
   }
 
 
   ul li{
     display: inline-block;
-    padding: 0px 70px;
+    padding: 0px 45px;
+
+  }
+  #langD1{ //desktop inside unordered l
+
+      width: 100%;
+
+    #es, #usa{
+      float:left;
+      width:34px;
+        margin-left: 6px;
+      display: inline-block;
+    }
 
   }
 
-  #lang{
-    float:left;
-    margin-left: 20px;
+
+  #langD{
+    display: none;
+      background: linear-gradient(white, lightblue);
+      width: 100%;
+
+    #es, #usa{
+      float:left;
+      width:34px;
+        margin-left: 6px;
+      display: inline-block;
+    }
     #es{
       width:34px;
-      display: inline-block;
     }
     #usa{
-      width:34px;
-      display: inline-block;
+      width:32px;
+      padding-top:1px;
     }
+
   }
 }
 
 
 //mobile
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 
   .header {
+    i{
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 0px 12px 12px 0px;
+
+    }
     min-height: auto;
+    ul{
+      background: #fff;
+      height: 0px;
+    opacity:  0;
+    -webkit-transition: height 1s; /* Safari */
+    transition: opacity 1s;
+
+      z-index: 3;
+      width: 100%;
+      background-color: $greyback;
+      top: 0px;
+      position: absolute;
+      height: auto;
+      a{
+        display: block;
+        margin: auto;
+        border: 1px solid lightgray;
+        border-radius: 3%;
+      }
+    }
   .ber{
     position: absolute;
-    height: 123px;
-    width: 165px;
-    top: 76px;
-    right: 0%;
+    height: 215px;
+    width: 265px;
+    top: 151px;
+    right: 31%;
 
   }
-  .back{
+  #langD1{
     display: none;
   }
+
+  #langD{
+    display: block;
+    float:left;
+    margin-left: 0px;
+
+    #es, #usa{
+      float:left;
+
+        margin-left: 6px;
+      display: inline-block;
+    }
+    #es{
+      width:34px;
+    }
+    #usa{
+      width:32px;
+      padding-top:1px;
+    }
   }
+
+  //caret up
+  .fa-caret-up{
+      padding: 0px 25px 5px;
+    }
+
+    //toggleNav
+    .toggleNav{
+      height: auto;
+      opacity: 1;
+    }
+
+
+}//header
 }//end query
 
 

@@ -7,13 +7,13 @@
 
 #rests {
   max-width: 900px;
+
   margin: auto;
 
     overflow: hidden;
     position: relative;
     padding: 0 55px 10px;
-  background-color: $pink-light;
-  border-bottom: 1px solid pink;
+  
   a img{
     vertical-align: middle;
 
@@ -88,4 +88,14 @@
  //arrows
  #left-arr , #right-arr{
    vertical-align: middle !important;
+ }
+
+
+ @media only screen and (max-width: 768px) {
+   #rests {
+     margin-top: 0px;
+       margin-bottom: 40px;
+     max-width: 284px;
+   }
+
  }
