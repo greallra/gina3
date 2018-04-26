@@ -83,3 +83,20 @@ form{
 
 }
 }//query
+
+
+//mobile S
+@media only screen and (max-width: 576px) {
+  .contact{
+      background: url('../../images/londoni.jpeg');
+       background-size: cover;
+       background-repeat: no-repeat;
+  }
+  form{
+    textarea{
+      height: 70px;
+        width: 250px;
+    }
+  }
+
+}//query

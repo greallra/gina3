@@ -83,7 +83,7 @@ animation: bounce 1.2s ease-out;
 }
 
 
-//mobile
+//mobile L
 @media only screen and (max-width: 768px) {
 
   .header {
@@ -164,6 +164,23 @@ animation: bounce 1.2s ease-out;
 }//end query
 
 
+//mobile S
+@media only screen and (max-width: 576px) {
+.header{
+  .back{
+    height: 193px;
+  }
+  .ber{
+    height: 127px;
+    width: 157px;
+    top: 65px;
+    right: 22%;
+  }
+
+}
+
+
+}
 
 
 

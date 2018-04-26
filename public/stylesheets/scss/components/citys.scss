@@ -104,3 +104,55 @@
   }
 
 }
+
+//mobile S
+@media only screen and (max-width: 576px) {
+  #citys{
+      padding: 0 53px 10px;
+  }
+
+  #citys .overview li {
+
+      height: 170px;
+
+      width: 190px;
+
+
+   }
+
+   #citys .prev{
+
+       top: 32%;
+
+
+   }
+   #citys  .next {
+
+       top: 32%;
+
+
+   }
+   #citys .viewport{
+     max-width: 213px;
+   }
+
+
+}//query
+.images-small{
+   display: none;
+}
+
+@media only screen and (max-width: 576px){
+  .images-big{
+     display: none;
+  }
+
+  .images-small{
+     display: inline-block;
+  }
+
+
+  #citys .next{
+  left: 261px;
+  }
+}

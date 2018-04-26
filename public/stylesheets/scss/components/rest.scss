@@ -13,7 +13,7 @@
     overflow: hidden;
     position: relative;
     padding: 0 55px 10px;
-  
+
   a img{
     vertical-align: middle;
 
@@ -98,4 +98,56 @@
      max-width: 284px;
    }
 
+ }
+
+ //mobile S
+ @media only screen and (max-width: 576px) {
+   #rests{
+       padding: 0 53px 10px;
+   }
+
+   #rests .overview li {
+
+       height: 170px;
+
+       width: 190px;
+
+
+    }
+
+    #rests .prev{
+
+        top: 49%;
+
+
+    }
+    #rests  .next {
+
+        top: 49%;
+
+
+    }
+    #rests .viewport{
+      max-width: 213px;
+    }
+
+
+ }//query
+ .images-small{
+    display: none;
+ }
+
+ @media only screen and (max-width: 576px){
+   .images-big{
+      display: none;
+   }
+
+   .images-small{
+      display: inline-block;
+   }
+
+
+   #rests .next{
+   left: 261px;
+   }
  }
