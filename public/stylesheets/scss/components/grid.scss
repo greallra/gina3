@@ -1,9 +1,10 @@
+
 //desktop
 @media only screen and (min-width: 768px) {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12,1fr);
-  grid-template-rows: repeat(6,minmax(150px,auto));
+  grid-template-rows: repeat(6,minmax(100px,auto));
   text-align: center;
 
   position: relative;
@@ -23,7 +24,7 @@
 
 }
 .aside{
-  grid-column: 10/ 12;
+  grid-column: 10/ 13;
   grid-row: 2/ 3;
   // background-color: $greyback;
 }
@@ -55,7 +56,7 @@
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(6,minmax(auto,auto));
     text-align: center;
-    margin: 0px 25px;
+    margin: 0px 4px;
     position: relative;
   }
   .grid-container > div {

@@ -8,6 +8,9 @@ var expressLayouts = require('express-ejs-layouts')
 
 var index = require('./routes/index');
 var london = require('./routes/london');
+var nottingham = require('./routes/nottingham');
+var switzerland = require('./routes/switzerland');
+var admin = require('./routes/admin');
 
 var app = express();
 
@@ -27,8 +30,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 
-app.use('/', index);
+app.use('/admin', admin);
 app.use('/london', london);
+app.use('/nottingham', nottingham);
+app.use('/switzerland', switzerland);
+app.use('/', index);
 // catch 404 and forward to error handler
 
 // error handler
