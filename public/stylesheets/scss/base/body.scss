@@ -1,10 +1,16 @@
 body {
   //font-family: 'Kalam', cursive;
   margin: 0px;
-  background-color: #fff;
+  background-color: #fafafa;
 font-family: 'Rancho', cursive;
 box-sizing: border-box;
 }
+
+.Rb-outer, .social-media,#citys, #rests{
+  background-color: #fff;
+
+}
+
 P{
   font-weight: 600;
   font-size: 25px;
@@ -32,6 +38,7 @@ a{
 @media only screen and (max-width: 768px) {
 h1,h2,h3{
   font-size: 40px;
+  background-color: #fafafa;
 }
 }
 

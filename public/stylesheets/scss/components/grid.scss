@@ -30,7 +30,7 @@
 }
 .citys{
   grid-column: 2 / 12;
-  border: $greyback;
+
 }
 .rests{
   grid-column: 2 /12;
@@ -76,8 +76,7 @@
     grid-column: 1/ 13;
   margin: 5px 0px !important;
 
-    border-top: $greyborder;
-    border-bottom: $greyborder;
+
   }
   .citys{
     grid-column: 1 / 13;
@@ -93,7 +92,7 @@
   }
   .footer{
     grid-column: 1 / 13;
-    background-color: darkgrey;
+
   }
 
 

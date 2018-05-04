@@ -5,13 +5,17 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var expressLayouts = require('express-ejs-layouts')
-
+//page-blog-routes
 var index = require('./routes/index');
 var london = require('./routes/london');
 var nottingham = require('./routes/nottingham');
 var switzerland = require('./routes/switzerland');
+var belgium = require('./routes/belgium');
 var admin = require('./routes/admin');
-
+//Restaurants routes
+var rests = require('./routes/rests');
+//page-blog
+var pageBlog = require('./routes/page-blog');
 var app = express();
 
 // view engine setup
@@ -27,13 +31,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//page-blogs
+app.use('/page-blog', pageBlog);
 
-
-
+//admin
 app.use('/admin', admin);
-app.use('/london', london);
-app.use('/nottingham', nottingham);
-app.use('/switzerland', switzerland);
+
+//restaurants
+app.use('/rests', rests);
 app.use('/', index);
 // catch 404 and forward to error handler
 

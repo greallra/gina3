@@ -4,6 +4,11 @@ http://ontheroadleblog.com/
 http://gontraveler.com/
 */
 .recentBlog{
+  .Rb-outer{
+    box-shadow: 0px 0px 10px lightgrey;
+        margin: 20px 0px;
+  }
+
   h1{
     padding-bottom: 0px;
     margin-bottom: 11px;
