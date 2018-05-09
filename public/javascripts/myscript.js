@@ -3,37 +3,33 @@ window.onload = function(){
   $('#outline').toggleClass('outDisplay')
 
 });
-//menus opens onclick
-$('i').click(function() {
-$('.header ul').toggleClass('toggleNav');
+
+
+$('.main-menu li').click(function() {
+  // $('.sub-menu').css('display','none');
+
+$(this).find('ul').fadeToggle();
 
 });
 
-//menus opens onclick
-$( ".blogPostsLi" ).first().click(function() {
-  if($(".sub-menu").hasClass('sub-menu-active')){
-    $(".sub-menu").fadeOut().removeClass( "sub-menu-active" );
-
-  }else{
-    $(".sub-menu").fadeIn().addClass('sub-menu-active')
-  }
-
-
-});
-
+// $( ".main-menu li" ).hover(
+//   if($('.sub-menu').is(":visible")) {
+//     $( ".main-menu li" ).css('background', 'red')
+//   }
+// );
 
 
 //nav
+
+
 $('.icon').click(function() {
-myFunction();
+  if ($('.main-menu').is(':visible')) {
+    $('.main-menu').fadeOut( 1000 );
+} else {
+  $('.main-menu').fadeIn( 1000 );
+}
+
 });
 
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
+
 }//window

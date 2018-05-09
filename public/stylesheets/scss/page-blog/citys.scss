@@ -1,0 +1,86 @@
+//desk
+
+.container{
+  h1{
+    box-sizing: border-box;
+  }
+  box-sizing: border-box;
+  section{
+    box-sizing: border-box;
+      background: #fff;
+    img{
+      box-sizing: border-box;
+    }
+    p{
+      box-sizing: border-box;
+    }
+  }
+
+}
+
+.container{
+    max-width: 700px;
+    margin: auto;
+    padding: 0px 35px;
+
+
+  h1, h2, h3{
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+  }
+
+}
+
+section{
+
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  padding: 0px 37px;
+    box-shadow: 1px 1px 16px lightgrey;
+  img{
+    box-shadow: 0px 0px 4px lightgrey;
+      border: 1px solid lightgray;
+    display:block;
+    width: 100%;;
+    height: auto;
+    margin: auto;
+    vertical-align: top;
+  }
+  h3{
+    text-align: center;
+    margin-top: 0px;
+    font-size: 34px;
+  }
+  p{
+    padding: 45px;
+    text-align: center;
+    line-height: 35px;
+    font-weight: 500;
+
+  }
+  strong{
+    background-color: lightblue;
+    border-radius: 3%;
+
+  }
+}
+
+
+
+//mob L
+@media only screen and (max-width: 768px) {
+  section, img, p{
+    width: 100%;
+    display: block;
+     padding: 0px 0px;
+  }
+
+img{
+  max-height: 700px;
+}
+
+}

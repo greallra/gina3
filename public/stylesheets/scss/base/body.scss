@@ -1,7 +1,7 @@
 body {
   //font-family: 'Kalam', cursive;
   margin: 0px;
-  background-color: #fafafa;
+  background-color: $greyback;
 font-family: 'Rancho', cursive;
 box-sizing: border-box;
 }
@@ -38,7 +38,7 @@ a{
 @media only screen and (max-width: 768px) {
 h1,h2,h3{
   font-size: 40px;
-  background-color: #fafafa;
+  background-color: #fff;
 }
 }
 
