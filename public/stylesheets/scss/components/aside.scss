@@ -1,31 +1,33 @@
 ///social incons
-.social-media{
-  width: 100%;
-  box-shadow: 0px 0px 10px lightgrey;
-  margin-top: 20px;
-  padding: 10px 0px;
-  h3{
-    // margin-top: 28px;
-
-  }
-  ul{
-
-    list-style: none;
-    padding: 0px;
-  }
-}
+// .social-media{
+//   width: 100%;
+//   box-shadow: 0px 0px 10px lightgrey;
+//   margin-top: 20px;
+//   padding: 10px 0px;
+//   h3{
+//     // margin-top: 28px;
+//
+//   }
+//   ul{
+//
+//     list-style: none;
+//     padding: 0px;
+//   }
+// }
 
 
 #fb{
   margin: 0px 12px;
 }
 //instagram photos
-#insta-outer{
+.aside{
+  border: $greyborder;
   background-color: #fff;
-  margin-top: 44px;
+  height: 97%;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0px 0px 10px lightgrey;
+
   h3{
     padding-top: 15px;
   }
@@ -48,9 +50,10 @@
 
 }
 @media only screen and (max-width: 768px) {
-  #insta-outer{
+  .aside{
     margin-bottom: 50px;
-    box-shadow: 0px 0px 10px lightgrey;
+    border-top: $greyborder;
+    height: 100%;
   }
 
   #insta{

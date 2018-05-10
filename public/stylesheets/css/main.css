@@ -1,6 +1,6 @@
 body {
   margin: 0px;
-  background-color: #fafafa;
+  background-color: #f6f6f6;
   font-family: 'Rancho', cursive;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -95,25 +95,22 @@ section {
     max-height: 700px; } }
 
 @media only screen and (max-width: 768px) {
-  #header {
-    height: 200px;
-    background: url("../../images/sea11.jpg") scroll no-repeat center/cover;
-    border-radius: 0 0 25px 25px; }
-    #header .ber {
+  .header {
+    background: #fff;
+    -webkit-box-shadow: 0 4px 2px -2px #f6f6f6;
+    box-shadow: 0 4px 2px -2px #f6f6f6;
+    border-bottom: 1px solid #f1f1f1; }
+    .header .ber {
       width: 210px;
       height: 145px;
-      padding-top: 60px;
       margin: auto;
       -webkit-animation: bounce 3s;
       animation: bounce 3s; } }
 
 @media only screen and (min-width: 768px) {
-  #header {
-    height: 400px;
-    background: url("../../images/sea11.jpg") scroll no-repeat center/cover;
-    border-radius: 0 0 25px 25px; }
-    #header .ber {
-      padding-top: 158px;
+  .header {
+    background: #fff; }
+    .header .ber {
       margin: auto;
       -webkit-animation: bounce 3s;
       animation: bounce 3s; } }
@@ -305,8 +302,7 @@ section {
 #citys {
   max-width: 900px;
   margin: auto;
-  -webkit-box-shadow: 0px 0px 10px #fafafa;
-  box-shadow: 0px 0px 10px #fafafa;
+  border-top: 1px solid #f1f1f1;
   margin-top: 44px;
   position: relative;
   padding: 0 55px 10px; }
@@ -327,7 +323,9 @@ section {
     height: 200px; }
 
 #citys .buttons {
-  background: #C01313;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 1px grey;
+  box-shadow: 0px 0px 1px grey;
   border-radius: 35px;
   margin-top: 58px;
   display: iblock;
@@ -352,8 +350,8 @@ section {
   top: 38%; }
 
 #citys .buttons:hover {
-  color: #C01313;
-  background: #fff; }
+  -webkit-box-shadow: 0px 0px 7px grey;
+  box-shadow: 0px 0px 7px grey; }
 
 #citys .disable {
   visibility: hidden; }
@@ -383,44 +381,40 @@ section {
     margin-top: 0px;
     max-width: 284px; } }
 
-.social-media {
-  width: 100%;
-  -webkit-box-shadow: 0px 0px 10px lightgrey;
-  box-shadow: 0px 0px 10px lightgrey;
-  margin-top: 20px;
-  padding: 10px 0px; }
-  .social-media ul {
-    list-style: none;
-    padding: 0px; }
+@media only screen and (max-width: 429px) {
+  #citys .overview li {
+    width: 265px; }
+  #citys .viewport img {
+    width: 265px; } }
 
 #fb {
   margin: 0px 12px; }
 
-#insta-outer {
+.aside {
+  border: 1px solid #f1f1f1;
   background-color: #fff;
-  margin-top: 44px;
+  height: 97%;
+  margin-top: 20px;
   margin-left: auto;
-  margin-right: auto;
-  -webkit-box-shadow: 0px 0px 10px lightgrey;
-  box-shadow: 0px 0px 10px lightgrey; }
-  #insta-outer h3 {
+  margin-right: auto; }
+  .aside h3 {
     padding-top: 15px; }
-  #insta-outer .insta-pic {
+  .aside .insta-pic {
     width: 100px;
     height: 133px;
     padding: 5px;
     display: inline-block;
     border: 1px solid lightgrey;
     margin: 4px 0px; }
-    #insta-outer .insta-pic img {
+    .aside .insta-pic img {
       height: 100%;
       width: 100%; }
 
 @media only screen and (max-width: 768px) {
-  #insta-outer {
+  .aside {
     margin-bottom: 50px;
-    -webkit-box-shadow: 0px 0px 10px lightgrey;
-    box-shadow: 0px 0px 10px lightgrey; }
+    border-top: 1px solid #f1f1f1;
+    height: 100%; }
   #insta {
     margin-left: 39px; }
   .social-media {
@@ -441,8 +435,7 @@ section {
 
 #rests {
   max-width: 900px;
-  -webkit-box-shadow: 0px 0px 10px lightgrey;
-  box-shadow: 0px 0px 10px lightgrey;
+  border-top: 1px solid #f1f1f1;
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -459,7 +452,9 @@ section {
     height: 200px; }
 
 #rests .buttons {
-  background: #C01313;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 1px grey;
+  box-shadow: 0px 0px 1px grey;
   border-radius: 35px;
   display: block;
   position: absolute;
@@ -483,8 +478,8 @@ section {
   top: 58%; }
 
 #rests .buttons:hover {
-  color: #C01313;
-  background: #fff; }
+  -webkit-box-shadow: 0px 0px 7px grey;
+  box-shadow: 0px 0px 7px grey; }
 
 #rests .disable {
   visibility: hidden; }
@@ -515,19 +510,23 @@ section {
     margin-bottom: 40px;
     max-width: 284px; } }
 
+@media only screen and (max-width: 429px) {
+  #rests .overview li {
+    width: 265px; }
+  #rests .viewport img {
+    width: 265px; } }
+
 /*
 http://ontheroadleblog.com/
 http://gontraveler.com/
 */
-.recentBlog .Rb-outer {
-  -webkit-box-shadow: 0px 0px 10px lightgrey;
-  box-shadow: 0px 0px 10px lightgrey;
-  margin: 20px 0px; }
-
-.recentBlog h1 {
-  padding-bottom: 0px;
-  margin-bottom: 11px;
-  border-top: 1px solid #e9e9e9; }
+.recentBlog {
+  margin-top: 20px;
+  border: 1px solid #f1f1f1;
+  background: #fff; }
+  .recentBlog h1 {
+    padding-bottom: 0px;
+    margin-bottom: 11px; }
 
 .rslides {
   position: relative;
@@ -566,6 +565,8 @@ http://gontraveler.com/
     font-weight: 600;
     font-size: 25px;
     margin: 0px 0px; }
+  .rslides #hazClick {
+    font-size: 12px; }
 
 @media only screen and (max-width: 768px) {
   .recentBlog h1 {
@@ -593,20 +594,15 @@ form {
     text-align: center;
     border-top: none; }
   form input, form textarea {
-    background-color: lightblue;
-    border: none;
-    -webkit-box-shadow: 0px 0px 3px white;
-    box-shadow: 0px 0px 3px white;
+    background: #fff;
     padding: 5px;
     -webkit-border-radius: 5px;
-    border-radius: 5px;
-    opacity: 0.6; }
+    border-radius: 5px; }
   form input[type=text]:focus {
-    border-color: #333;
-    opacity: 0.8 !important; }
+    border-color: #333; }
   form input[type=submit] {
     padding: 15px 15px;
-    background: lightblue;
+    background: #fff;
     border: 0 none;
     cursor: pointer;
     -webkit-border-radius: 5px;
@@ -619,7 +615,7 @@ form {
 
 @media only screen and (max-width: 768px) {
   .contact {
-    background: url("../../images/contact-pic.jpg");
+    background: url("../../images/contact-pic-mob.jpg");
     background-size: cover;
     margin-top: 39px;
     height: 380px; }
@@ -632,15 +628,14 @@ form {
       margin-bottom: 3px;
       margin-top: 8px; }
     form input[type=submit] {
-      padding: 12px 15px;
-      opacity: 0.9; }
+      padding: 12px 15px; }
     form textarea {
       height: 106px;
       width: 432px; } }
 
 @media only screen and (max-width: 576px) {
   .contact {
-    background: url("../../images/contact-pic.jpg");
+    background: url("../../images/contact-pic-mob.jpg");
     background-size: cover;
     background-repeat: no-repeat; }
   form textarea {
@@ -648,10 +643,7 @@ form {
     width: 250px; } }
 
 .footer {
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(lightblue));
-  background: -webkit-linear-gradient(white, lightblue);
-  background: -o-linear-gradient(white, lightblue);
-  background: linear-gradient(white, lightblue); }
+  background: #fff; }
   .footer ul {
     list-style: none;
     padding: 0px;
@@ -672,10 +664,7 @@ form {
 
 /*nav style*/
 .nav {
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(lightblue));
-  background: -webkit-linear-gradient(white, lightblue);
-  background: -o-linear-gradient(white, lightblue);
-  background: linear-gradient(white, lightblue);
+  border-top: 1px solid #f1f1f1;
   text-align: center;
   padding: 0px 0px; }
 
@@ -716,7 +705,8 @@ form {
   text-decoration: none;
   width: 100%;
   height: 100%;
-  display: inline-block; }
+  display: inline-block;
+  border-bottom: 1px solid #f1f1f1; }
   .sub-menu a:hover {
     background: lightblue; }
 
@@ -724,9 +714,9 @@ form {
   padding: 10px 32px; }
 
 .main-menu li:hover {
-  background: #86c5da;
-  color: white;
-  text-shadow: 1px 1px 1px white; }
+  background: #f6f6f6;
+  cursor: pointer;
+  text-shadow: 1px 1px 1px black; }
 
 .icon {
   display: none;
@@ -781,7 +771,7 @@ form {
   .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, minmax(100px, auto));
+    grid-template-rows: repeat(6, minmax(auto, auto));
     text-align: center;
     position: relative; }
   .header {
@@ -789,8 +779,7 @@ form {
   .recentBlog {
     grid-column: 2 / 9; }
   .aside {
-    grid-column: 10/ 13;
-    grid-row: 2/ 3; }
+    grid-column: 10/ 13; }
   .citys {
     grid-column: 2 / 12; }
   .rests {
@@ -800,7 +789,7 @@ form {
     text-align: start; }
   .footer {
     grid-column: 1 / 13;
-    background-color: darkgrey; } }
+    background: #fff; } }
 
 @media only screen and (max-width: 768px) {
   .grid-container {

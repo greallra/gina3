@@ -1,13 +1,13 @@
 //mobile L
 @media only screen and (max-width: 768px) {
-#header{
-   height: 200px;
-  background: url('../../images/sea11.jpg') scroll no-repeat center/cover;
-  border-radius: 0 0 25px 25px;
+.header{
+  background: #fff;
+        box-shadow: 0 4px 2px -2px $greyback;
+        border-bottom: $greyborder;
       .ber{
         width: 210px;
         height: 145px;
-        padding-top: 60px;
+
         margin: auto;
         animation: bounce 3s;
       }
@@ -17,13 +17,9 @@
 
 //desktop
 @media only screen and (min-width: 768px) {
-#header{
-  height: 400px;
-  background: url('../../images/sea11.jpg') scroll no-repeat center/cover;
-  border-radius: 0 0 25px 25px;
+.header{
+  background: #fff;
       .ber{
-        padding-top: 158px;
-
         margin: auto;
         animation: bounce 3s;
       }
