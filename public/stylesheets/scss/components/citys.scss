@@ -131,3 +131,16 @@
        }
    }
 }
+
+// //mobile xxS
+@media only screen and (max-width: 399px) {
+  #citys .overview li {
+      width: 210px;
+   }
+   #citys .viewport {
+       img{
+         width: 210px;
+
+       }
+   }
+}

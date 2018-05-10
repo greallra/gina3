@@ -62,8 +62,8 @@ section {
   vertical-align: top;
   width: 100%;
   padding: 0px 37px;
-  -webkit-box-shadow: 1px 1px 16px lightgrey;
-  box-shadow: 1px 1px 16px lightgrey; }
+  border: 1px solid #f1f1f1;
+  background-color: #fff; }
   section img {
     -webkit-box-shadow: 0px 0px 4px lightgrey;
     box-shadow: 0px 0px 4px lightgrey;
@@ -83,16 +83,20 @@ section {
     line-height: 35px;
     font-weight: 500; }
   section strong {
-    background-color: lightblue;
+    background-color: lightgrey;
     border-radius: 3%; }
 
 @media only screen and (max-width: 768px) {
+  .container {
+    padding: 0px 12px; }
   section, img, p {
     width: 100%;
     display: block;
     padding: 0px 0px; }
   img {
-    max-height: 700px; } }
+    max-height: 700px; }
+  section p {
+    padding: 5px; } }
 
 @media only screen and (max-width: 768px) {
   .header {
@@ -387,6 +391,12 @@ section {
   #citys .viewport img {
     width: 265px; } }
 
+@media only screen and (max-width: 399px) {
+  #citys .overview li {
+    width: 210px; }
+  #citys .viewport img {
+    width: 210px; } }
+
 #fb {
   margin: 0px 12px; }
 
@@ -515,6 +525,12 @@ section {
     width: 265px; }
   #rests .viewport img {
     width: 265px; } }
+
+@media only screen and (max-width: 399px) {
+  #rests .overview li {
+    width: 210px; }
+  #rests .viewport img {
+    width: 210px; } }
 
 /*
 http://ontheroadleblog.com/

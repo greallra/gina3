@@ -40,7 +40,8 @@ section{
   vertical-align: top;
   width: 100%;
   padding: 0px 37px;
-    box-shadow: 1px 1px 16px lightgrey;
+  border: $greyborder;
+  background-color: #fff;
   img{
     box-shadow: 0px 0px 4px lightgrey;
       border: 1px solid lightgray;
@@ -63,7 +64,7 @@ section{
 
   }
   strong{
-    background-color: lightblue;
+    background-color: lightgrey;
     border-radius: 3%;
 
   }
@@ -73,6 +74,10 @@ section{
 
 //mob L
 @media only screen and (max-width: 768px) {
+  .container{
+
+      padding: 0px 12px;
+    }
   section, img, p{
     width: 100%;
     display: block;
@@ -81,6 +86,10 @@ section{
 
 img{
   max-height: 700px;
+}
+
+section p{
+  padding: 5px;
 }
 
 }
