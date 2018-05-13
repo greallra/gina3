@@ -1,4 +1,5 @@
 var express = require('express');
+var app = express()
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -6,18 +7,9 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var expressLayouts = require('express-ejs-layouts')
 //page-blog-routes
-var index = require('./routes/index');
-var london = require('./routes/london');
-var nottingham = require('./routes/nottingham');
-var switzerland = require('./routes/switzerland');
-var belgium = require('./routes/belgium');
-var admin = require('./routes/admin');
-//Restaurants routes
-var rests = require('./routes/rests');
-//page-blog
-var pageBlog = require('./routes/page-blog');
-var app = express();
-
+var blogRoutes = require('./routes/index');
+//admin route
+var adminRoute = require('./routes/admin');
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -31,15 +23,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-//page-blogs
-app.use('/page-blog', pageBlog);
 
-//admin
-app.use('/admin', admin);
+//all urls here
+app.use('/', blogRoutes);
+//ADMIN URL
+app.use('/admin', adminRoute);
 
-//restaurants
-app.use('/rests', rests);
-app.use('/', index);
 // catch 404 and forward to error handler
 
 // error handler

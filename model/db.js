@@ -10,22 +10,26 @@ db.once('open', function callback () {
 
  var Schema = mongoose.Schema;
 //schema
- var UserMessagesSchema = new Schema({
+ var messagesSchema = new Schema({
    name:  String,
    email: String,
    message: String
  });
 
  //model
-var UserMessages = mongoose.model('UserMessages', UserMessagesSchema);
-
-
+var messages = mongoose.model('messages', messagesSchema);
+// 
+// var user = new messages({
+//   name:  "gina",
+//   email: "gina@tcd.ie",
+//   message: "Hi my name is gina and i am cool, yuu juuuuuu"
+// })
 //
-// user.save(function(err,data){
+// user.save(function(err,user){
 //   if(err) throw err;
 //   console.log('saved to db')
 // });
 
 
 
-module.exports = UserMessages;
+module.exports = messages;

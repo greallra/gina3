@@ -16,7 +16,7 @@
   padding: 10px 34px;
   margin-left: 10px;
   border-left: 2px solid #fff;
-  width: 150px;
+  width: 175px;
     color:black;
   font-size:20px;
   transition:0.5s;
@@ -31,7 +31,7 @@
   border: 1px solid white;
   margin-top: 11px;
   padding-left: 0px;
-  width:150px;
+  width: 175px;
   text-align:left;
   box-shadow: 1px 1px 1px grey;
   z-index: 10;
@@ -39,6 +39,8 @@
 .sub-menu>li{
   padding:10px;
   background: #37f;
+
+
 }
 
 .sub-menu{
@@ -54,7 +56,8 @@
   }
 
   li{
-      padding: 10px 32px;
+    padding: 10px 10px;
+      text-align: center;
 
   }
 }
@@ -87,7 +90,7 @@
   margin:auto;
     border-left: none;
     border-bottom: 2px solid #fff;
-
+    
 }
 .main-menu li:hover{
   background: transparent;
@@ -105,6 +108,12 @@
 .sub-menu li {
 
   border-bottom: none;
+  &:hover{
+    background: $greyback;
+    cursor: pointer;
+     text-shadow: 1px 1px 1px black;
+     border: $greyborder;
+  }
 }
 
 
