@@ -9,23 +9,26 @@ db.once('open', function callback () {
 });
 
  var Schema = mongoose.Schema;
-//schema
+//schemas
  var messagesSchema = new Schema({
    name:  String,
    email: String,
    message: String
  });
+ var commentsSchema = new Schema({
+   comment: String
+ });
 
- //model
+ //models
 var messages = mongoose.model('messages', messagesSchema);
-// 
-// var user = new messages({
-//   name:  "gina",
-//   email: "gina@tcd.ie",
-//   message: "Hi my name is gina and i am cool, yuu juuuuuu"
+var comments = mongoose.model('comments', commentsSchema);
+//
+// var comment = new comments({
+//
+//   comment: "blaaaaaah"
 // })
 //
-// user.save(function(err,user){
+// comment.save(function(err,user){
 //   if(err) throw err;
 //   console.log('saved to db')
 // });
@@ -33,3 +36,4 @@ var messages = mongoose.model('messages', messagesSchema);
 
 
 module.exports = messages;
+module.exports = comments;

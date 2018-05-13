@@ -3,32 +3,50 @@
 <% include ../header-noback %>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="container">
 
     <section>
       <h3>Gastromaquia</h3>
       <img src="\images\rests\gastromaquia\gastromaquia-page\gas1.jpg" alt="">
       <p>
-        <strong>Gastromaquia!!!</strong>BERENJENAS CROCANTES, GRATINADAS EN POMODORO DE LA CASA, MIS FAVORITAS!!!! HASTA AHORA NO HE PROBADO UNAS MAS RICAS EN TODO MADRID LO JURO! EL CONTRASTE DE LO CROCANTE CON LO SUAVE DEL QUESO Y LA SALSA POMODORO ESTA DE 10.
+        <strong>GASTROMAQUIA!!!</strong>Gastromaquia definición: dicese del lugar donde la gente ama comer. Es lo que miras al abrir el menu de este restaurante y ya sabia que iba a estar bueno. Ubicado en el barrio de chueca, pleno centro de madrid capital, gastromaquia te va a seducir con su comida fusión mediterranea-latina (diganme si ya con eso no fue suficiente?), en su espacio cálido y acojedor, con una variedad de platos para todos los gustos y atendido por gente super especial que te hace sentir mega confortable.
       </p>
       <img src="\images\rests\gastromaquia\gastromaquia-page\gas3.jpg" alt="">
       <p>
-        ARROZ NEGRO, ES UN ARROZ MELOSO CON CHIPIRONES CROCANTES Y EMULSIÓN DE AJÍ AMARILLO, YUM! ESE TÍPICO ARROZ NEGRO QUE SIEMPRE GUSTA PERO CON ESE TOQUE UN POCO PICANTE QUE A MI NO ME PUEDE FALTAR EN LA COMIDA.
+        Arroz negro, es un arroz meloso con chipirones crocantes y emulsión de ají amarillo, yum! Ese típico arroz negro que siempre gusta pero con ese toque un poco picante que a mi no me puede faltar en la comida.
       </p>
       <img src="\images\rests\gastromaquia\gastromaquia-page\gas2.jpeg" alt="">
       <p>
-        Y POR SI NO LO SABIAN SU TARTA DE QUESO LA HAN NOMBRADO "LA MEJOR TARTA DE QUESO DEL MUNDO" ASI QUE NO PODEIS DEJAR DE PROBARLA.
+        Berenjenas crocantes, gratinadas en pomodoro de la casa, mis favoritas!!!! Hasta ahora no he probado unas mas ricas en todo madrid lo juro! El contraste de lo crocante con lo suave del queso y la salsa pomodoro esta de 10.
+
+        Y por si no lo sabian su tarta de queso la han nombrado "La mejor tarta de queso del mundo" asi que no podeis dejar de probarla.
       </p>
       <p>
-        EN FIN, GENIAL COMPARANDO PRECIO-CALIDAD-PORCIONES, UBICACIÓN
+      En fin, genial comparando precio-calidad-porciones, ubicación
       </p>
     </section>
 
     <div class="comments">
-      <form>
+      <form method="post" action="/rests/gastromaquia">
       <h3>Dejame un comentario abajo</h3>
-      <div class="comments">Comment Comment Comment Comment Comment Comment Comment Comment Comment </div>
-      <textarea></textarea><br>
+      <div class="comments">
+        <%= comments[0].comment %>
+
+       </div>
+      <textarea name="comment"></textarea><br>
       <button>Submit</button>
     </form>
     </div>
