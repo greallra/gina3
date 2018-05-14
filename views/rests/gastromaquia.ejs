@@ -22,7 +22,7 @@
       <h3>Gastromaquia</h3>
       <img src="\images\rests\gastromaquia\gastromaquia-page\gas1.jpg" alt="">
       <p>
-        <strong>GASTROMAQUIA!!!</strong>Gastromaquia definición: dicese del lugar donde la gente ama comer. Es lo que miras al abrir el menu de este restaurante y ya sabia que iba a estar bueno. Ubicado en el barrio de chueca, pleno centro de madrid capital, gastromaquia te va a seducir con su comida fusión mediterranea-latina (diganme si ya con eso no fue suficiente?), en su espacio cálido y acojedor, con una variedad de platos para todos los gustos y atendido por gente super especial que te hace sentir mega confortable.
+        <strong>Gastromaquia definición:</strong> dicese del lugar donde la gente ama comer. Es lo que miras al abrir el menu de este restaurante y ya sabia que iba a estar bueno. Ubicado en el barrio de chueca, pleno centro de madrid capital, gastromaquia te va a seducir con su comida fusión mediterranea-latina (diganme si ya con eso no fue suficiente?), en su espacio cálido y acojedor, con una variedad de platos para todos los gustos y atendido por gente super especial que te hace sentir mega confortable.
       </p>
       <img src="\images\rests\gastromaquia\gastromaquia-page\gas3.jpg" alt="">
       <p>
@@ -40,14 +40,22 @@
     </section>
 
     <div class="comments">
-      <form method="post" action="/rests/gastromaquia">
+      <form onsubmit="alert('stop submit'); return false;" method="post" action="/rests/gastromaquia">
       <h3>Dejame un comentario abajo</h3>
+      <div id="success"><i>Mil gracias por tu comentario!</i></div>
       <div class="comments">
-        <%= comments[0].comment %>
+
+        <% comments.forEach(function(comment){ %>
+
+            <ul>
+          <li> <%= comment.comment %> </li>
+
+        </ul>
+        <% }); %>
 
        </div>
-      <textarea name="comment"></textarea><br>
-      <button>Submit</button>
+      <textarea id="comment" name="comment"></textarea><br>
+      <button id="submitComment">Submit</button>
     </form>
     </div>
 

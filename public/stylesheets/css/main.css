@@ -315,7 +315,9 @@ section {
   position: relative;
   padding: 0 55px 10px; }
   #citys a img {
-    vertical-align: middle; }
+    vertical-align: middle;
+    width: 20px;
+    height: 20px; }
   #citys h1 {
     padding-top: 30px;
     max-width: 100%;
@@ -702,6 +704,8 @@ form {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
+  .main-menu > li a {
+    text-decoration: none; }
 
 .sub-menu {
   background: rgba(255, 255, 255, 0.7);

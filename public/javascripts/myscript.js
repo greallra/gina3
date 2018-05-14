@@ -32,4 +32,9 @@ $('.icon').click(function() {
 });
 
 
+//link home button to home page on onclick
+$('#home').click(function() {
+  window.location.replace("/");
+});
+
 }//window

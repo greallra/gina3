@@ -6,6 +6,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var expressLayouts = require('express-ejs-layouts')
+
 //page-blog-routes
 var blogRoutes = require('./routes/index');
 //admin route

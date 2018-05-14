@@ -20,7 +20,9 @@
     color:black;
   font-size:20px;
   transition:0.5s;
-
+  a{
+    text-decoration: none;
+  }
 }
 
 .sub-menu{
@@ -90,7 +92,7 @@
   margin:auto;
     border-left: none;
     border-bottom: 2px solid #fff;
-    
+
 }
 .main-menu li:hover{
   background: transparent;

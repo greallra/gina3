@@ -23,12 +23,14 @@ db.once('open', function callback () {
 var messages = mongoose.model('messages', messagesSchema);
 var comments = mongoose.model('comments', commentsSchema);
 //
-// var comment = new comments({
+// var message = new messages({
 //
-//   comment: "blaaaaaah"
+//   name:  "bob",
+//   email: "g@gmail.com",
+//   message: "heeey"
 // })
 //
-// comment.save(function(err,user){
+// message.save(function(err,user){
 //   if(err) throw err;
 //   console.log('saved to db')
 // });
