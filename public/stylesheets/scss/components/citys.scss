@@ -21,7 +21,7 @@
   a img{
     vertical-align: middle;
     width: 20px;
-    height:20px;
+    height: 20px;
 
     }
     //Restaurants h1
@@ -116,14 +116,20 @@
   #citys {
     margin-top: 0px;
     max-width: 284px;
+    a img{
+      width: 35px;
+      height: 35px;
 
-  
+      }
+
+
   }
 
 }
 
 //mobile xS
 @media only screen and (max-width: 429px) {
+
   #citys .overview li {
       width: 265px;
    }

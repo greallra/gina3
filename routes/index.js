@@ -42,6 +42,11 @@ router.post('/rests/gastromaquia',comments.add_render_comment);
 
 
 
+/* info page. */
+router.get('/info', function(req, res, next) {
+  res.render('info')
+});
+
 
 // router.post('/', function(req, res, next) {
 //   var newMessage = new UserMessages(req.body);

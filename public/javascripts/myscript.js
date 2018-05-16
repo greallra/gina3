@@ -5,21 +5,27 @@ window.onload = function(){
 });
 
 
-$('.main-menu li').click(function() {
-  // $('.sub-menu').css('display','none');
+//link home button to home page on onclick
 
-$(this).find('ul').fadeToggle();
-
+$( "#home" ).click(function( event ) {
+ window.location.replace("/");
 });
-
-// $( ".main-menu li" ).hover(
-//   if($('.sub-menu').is(":visible")) {
-//     $( ".main-menu li" ).css('background', 'red')
-//   }
-// );
 
 
 //nav
+$(".main-menu li").click(function() {
+  $('.sub-menu').not($(this).children()).hide(); //hides submenus children except one clicked
+     $(this).children().not($( "#home" )).fadeToggle();
+   });
+   //anthing clicked except li will close sub menus
+   $('body').click(function(event) {
+     if($(event.target).is('li')){
+            return;
+
+          }else{
+                $('.sub-menu').hide();
+          }
+      });
 
 
 $('.icon').click(function() {
@@ -32,9 +38,6 @@ $('.icon').click(function() {
 });
 
 
-//link home button to home page on onclick
-$('#home').click(function() {
-  window.location.replace("/");
-});
+
 
 }//window
