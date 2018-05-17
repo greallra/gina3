@@ -15,13 +15,11 @@ db.once('open', function callback () {
    email: String,
    message: String
  });
- var commentsSchema = new Schema({
-   comment: String
- });
+
 
  //models
 var messages = mongoose.model('messages', messagesSchema);
-var comments = mongoose.model('comments', commentsSchema);
+
 //
 // var message = new messages({
 //
@@ -38,4 +36,3 @@ var comments = mongoose.model('comments', commentsSchema);
 
 
 module.exports = messages;
-module.exports = comments;

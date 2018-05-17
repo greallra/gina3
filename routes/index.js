@@ -1,5 +1,4 @@
 var express = require('express');
-var comments = require('../controllers/commentsController');
 var messages = require('../controllers/messagesController')
 var router = express.Router();
 
@@ -34,11 +33,14 @@ router.get('/page-blog/belgium', function(req, res, next) {
 
 /*REST ROUTES*/
 /*REST ROUTES*/
-/* GET gastromaquia listing. */
-router.get('/rests/gastromaquia', comments.render_comment)
-
-/* POST gastromaquia COMMENTS. */
-router.post('/rests/gastromaquia',comments.add_render_comment);
+/* GET gastromaquia . */
+router.get('/rests/gastromaquia',function(req, res, next) {
+   res.render('rests/gastromaquia')
+});
+/* GET jagger . */
+router.get('/rests/jagger',function(req, res, next) {
+   res.render('rests/jagger')
+});
 
 
 

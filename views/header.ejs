@@ -1,5 +1,8 @@
 
 <div class="header">
+  <% if (success) { %>
+  <h2 style="color:green;margin:auto;"><%= success.message %></h2>
+<% } %>
 
   <img class="ber" src="\images\logo.png">
 
@@ -23,6 +26,7 @@
       <li>Restaurantes
         <ul class="sub-menu">
           <a href="/rests/gastromaquia"><li>-Gastromaquia-</li></a>
+          <a href="/rests/jagger"><li>-Jagger-</li></a>
         </ul>
       </li>
       <li>Contacto
