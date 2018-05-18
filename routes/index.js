@@ -42,8 +42,6 @@ router.get('/rests/jagger',function(req, res, next) {
    res.render('rests/jagger')
 });
 
-
-
 /* info page. */
 router.get('/info', function(req, res, next) {
   res.render('info')

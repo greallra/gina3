@@ -96,8 +96,12 @@ http://gontraveler.com/
 //mobile S
 @media only screen and (max-width: 576px) {
 .recentBlog{
+  .rslides p{
+      width: 39%;
+  }
   .rslides img{
     height: 271px;
+
   }
 
 }

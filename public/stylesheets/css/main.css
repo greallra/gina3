@@ -1,6 +1,6 @@
 body {
   margin: 0px;
-  background-color: #f6f6f6;
+  background-color: #fafafa;
   font-family: 'Courgette', cursive;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -16,9 +16,6 @@ P {
 h1 {
   margin: 0px;
   padding: 21px 0px;
-  font-size: 26px; }
-
-h3 {
   font-size: 26px; }
 
 a {
@@ -87,7 +84,7 @@ section {
     line-height: 30px;
     font-weight: 100; }
   section strong {
-    background-color: #f6f6f6;
+    background-color: #fafafa;
     border-radius: 1%;
     -webkit-box-shadow: 0px 0px 1px;
     box-shadow: 0px 0px 1px;
@@ -109,8 +106,8 @@ section {
 @media only screen and (max-width: 768px) {
   .header {
     background: #fff;
-    -webkit-box-shadow: 0 4px 2px -2px #f6f6f6;
-    box-shadow: 0 4px 2px -2px #f6f6f6;
+    -webkit-box-shadow: 0 4px 2px -2px #fafafa;
+    box-shadow: 0 4px 2px -2px #fafafa;
     border-bottom: 1px solid #f1f1f1; }
     .header .ber {
       width: 210px;
@@ -605,6 +602,8 @@ http://gontraveler.com/
     height: 405px; } }
 
 @media only screen and (max-width: 576px) {
+  .recentBlog .rslides p {
+    width: 39%; }
   .recentBlog .rslides img {
     height: 271px; } }
 
@@ -746,7 +745,7 @@ form {
   text-align: center; }
 
 .main-menu li:hover {
-  background: #f6f6f6;
+  background: #fafafa;
   cursor: pointer;
   text-shadow: 1px 1px 1px black; }
 
@@ -781,7 +780,7 @@ form {
 .sub-menu li {
   border-bottom: none; }
   .sub-menu li:hover {
-    background: #f6f6f6;
+    background: #fafafa;
     cursor: pointer;
     text-shadow: 1px 1px 1px black;
     border: 1px solid #f1f1f1; }

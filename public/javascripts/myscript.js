@@ -10,6 +10,9 @@ window.onload = function(){
 $( "#home" ).click(function( event ) {
  window.location.replace("/");
 });
+$( "#home2" ).click(function( event ) {
+ window.location.replace("/");
+});
 
 
 //nav
