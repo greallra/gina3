@@ -112,7 +112,6 @@ section {
     .header .ber {
       width: 210px;
       height: 145px;
-      margin: auto;
       -webkit-animation: bounce 3s;
       animation: bounce 3s; } }
 
@@ -122,7 +121,11 @@ section {
     .header .ber {
       margin: auto;
       -webkit-animation: bounce 3s;
-      animation: bounce 3s; } }
+      animation: bounce 3s;
+      position: absolute;
+      right: 50%;
+      width: 210px;
+      height: 145px; } }
 
 @-webkit-keyframes bounce {
   0% {

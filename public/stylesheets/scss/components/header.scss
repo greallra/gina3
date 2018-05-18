@@ -7,9 +7,10 @@
       .ber{
         width: 210px;
         height: 145px;
-
-        margin: auto;
         animation: bounce 3s;
+      }
+      .text{
+
       }
 }
 
@@ -22,6 +23,10 @@
       .ber{
         margin: auto;
         animation: bounce 3s;
+        position: absolute;
+          right: 50%;
+          width: 210px;
+          height: 145px;
       }
 }
 
