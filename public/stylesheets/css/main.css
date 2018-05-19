@@ -103,29 +103,47 @@ section {
   section p {
     padding: 5px; } }
 
+.ber {
+  z-index: 2; }
+
+.text {
+  z-index: 0;
+  position: relative; }
+
 @media only screen and (max-width: 768px) {
   .header {
     background: #fff;
     -webkit-box-shadow: 0 4px 2px -2px #fafafa;
     box-shadow: 0 4px 2px -2px #fafafa;
     border-bottom: 1px solid #f1f1f1; }
+    .header .text {
+      padding-top: 29px; }
     .header .ber {
-      width: 210px;
-      height: 145px;
+      position: absolute;
+      width: 76px;
+      right: 45%;
+      height: 95px;
       -webkit-animation: bounce 3s;
       animation: bounce 3s; } }
+
+@media only screen and (max-width: 768px) {
+  .header .ber {
+    width: 39px;
+    right: 42%;
+    height: 50px; } }
 
 @media only screen and (min-width: 768px) {
   .header {
     background: #fff; }
+    .header .text {
+      padding-top: 31px; }
     .header .ber {
-      margin: auto;
-      -webkit-animation: bounce 3s;
-      animation: bounce 3s;
       position: absolute;
-      right: 50%;
-      width: 210px;
-      height: 145px; } }
+      width: 109px;
+      right: 46%;
+      height: 126px;
+      -webkit-animation: bounce 3s;
+      animation: bounce 3s; } }
 
 @-webkit-keyframes bounce {
   0% {
@@ -587,8 +605,8 @@ http://gontraveler.com/
     position: absolute;
     top: 15%;
     border-radius: 2%;
-    left: 33%;
-    width: 30%;
+    left: 35%;
+    max-width: 215px;
     color: black;
     font-size: 40px;
     font-weight: 600;
@@ -601,12 +619,12 @@ http://gontraveler.com/
   .recentBlog h1 {
     margin-top: 41px;
     padding-top: 10px; }
+  .recentBlog .rslides p {
+    left: 23%; }
   .recentBlog .rslides img {
     height: 405px; } }
 
 @media only screen and (max-width: 576px) {
-  .recentBlog .rslides p {
-    width: 39%; }
   .recentBlog .rslides img {
     height: 271px; } }
 
@@ -705,7 +723,7 @@ form {
 
 .main-menu > li {
   display: inline-block;
-  padding: 10px 34px;
+  padding: 10px 20px;
   margin-left: 10px;
   border-left: 2px solid #fff;
   width: 175px;

@@ -1,12 +1,24 @@
 //mobile L
+.ber{
+  z-index: 2;
+}
+.text{
+  z-index: 0;
+  position: relative;
+}
 @media only screen and (max-width: 768px) {
 .header{
   background: #fff;
+  .text{
+    padding-top: 29px;
+  }
         box-shadow: 0 4px 2px -2px $greyback;
         border-bottom: $greyborder;
       .ber{
-        width: 210px;
-        height: 145px;
+        position: absolute;
+        width: 76px;
+        right: 45%;
+        height: 95px;
         animation: bounce 3s;
       }
       .text{
@@ -15,19 +27,37 @@
 }
 
 }
+//mobile s - xs
+@media only screen and (max-width: 768px) {
+.header{
+  .ber{
+    width: 39px;
+  right: 42%;
+  height: 50px;
+}
+
+
+
+}
+}
+
+
 
 //desktop
 @media only screen and (min-width: 768px) {
 .header{
   background: #fff;
-      .ber{
-        margin: auto;
-        animation: bounce 3s;
-        position: absolute;
-          right: 50%;
-          width: 210px;
-          height: 145px;
+      .text{
+        padding-top: 31px;
       }
+        .ber{
+          position: absolute;
+          width: 109px;
+          right: 46%;
+          height: 126px;
+          animation: bounce 3s;
+        }
+
 }
 
 }
