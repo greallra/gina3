@@ -4,7 +4,9 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
+  
   res.render('index', { success: null });
+  console.log(req.locals)
 });
 /* POST home page. */
 router.post('/', messages.save_message);

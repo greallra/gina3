@@ -41,6 +41,13 @@ $('.icon').click(function() {
 });
 
 
+//language links
 
+$('.usa').click(function() {
+  window.location.href = "/en";
+});
 
+$('.es').click(function() {
+  window.location.href = "/";
+});
 }//window
